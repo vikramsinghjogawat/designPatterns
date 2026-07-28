@@ -8,11 +8,11 @@ public class Combination {
         List<List<Integer>> res = new ArrayList<>();
 
         int[] nums = {1,2,3};
-        res.add(new ArrayList<>());
+        res.add(new ArrayList<>());// Initially adding a new empty array
         for(int num:nums){
-            int size = res.size();
+            int size = res.size();// taking note of the number of existing subsets in the res and then iterating
             for(int i=0;i<size;i++){
-                List<Integer> newSubset = new ArrayList<>(res.get(i));
+                List<Integer> newSubset = new ArrayList<>(res.get(i));//Everytime we pick the older subsets and add our new number
                 newSubset.add(num);
                 res.add(newSubset);
             }
