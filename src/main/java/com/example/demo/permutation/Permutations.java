@@ -12,7 +12,7 @@ public class Permutations {
         permute(res,"",input);
         System.out.println(res);// [abc, acb, bac, bca, cab, cba]
     }
-
+        // IP->"abc", OP->""
     private static void permute(List<String> res, String current, String remaining) {
         if(remaining.isEmpty()){
             res.add(current);
