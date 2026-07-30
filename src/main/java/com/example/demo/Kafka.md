@@ -7,3 +7,5 @@ Partition
 Offset
 Consumer
 Producer
+Cluster
+Consumer Groups
